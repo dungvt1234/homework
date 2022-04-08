@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+form {
+    width: 730px;
+    text-align: center;
+    height: 950px;
+    background-color: rgb(22, 22, 56);
+}
+form h1{
+    color: azure;
+}
+.container{
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 690px;
+    background-color: aliceblue;
+    margin-left: 20px;
+}
+.Name{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+.Name input{
+    width: 40%;
+    height: 32px;  
+}
+.email-phone{
+    display: flex;
+    justify-content: space-around;
+}
+.email-phone input{
+width: 40%;
+height: 32px;
+}
+.form-country{
+    display: block;
+    justify-content: space-around;
+}
+.form-country select{
+    width: 629px;
+    height: 38px;
+    color: silver;
+}
+.city-address{
+    display: block;
+    justify-content: space-around;
+}
+.city-address input{
+  width: 90%;
+  height: 32px;
+}
+.Addtional-info{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.CV{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between
+}
+.CV input{
+    width: 628px;
+    height: 32px;
+}
+.CV button{
+    position: relative;
+    display: block;
+    height: 30px;
+    margin-left: -66px;
+    margin-top: 4px;
+    background-color: rgb(248, 125, 80);
+}
+p{
+    margin-left: -1050px;
+    color: rgb(129, 123, 123);
+}
+.Rset-Send{
+    width: 100%;
+    text-align: right;
+    padding-bottom: 20px;
+}
+.Rset-Send button{
+    background-color: rgb(248, 125, 80);
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+</style>
+<body>
+    <form action="" method="post" id="my-form">
+        <h1>Job Application Form Widget</h1>
+        <div class="container">
+            <div class="form-group">
+                <!--Name-->
+                <div class="Name">
+                <input type="text" name="fname" id="firstname" placeholder="First name">
+                <input type="text" name="lname" id="lastname" placeholder="Last name">
+            </div><br><br>
+            <!--email-phone-->
+            <div class="email-phone">
+                <input type="text" name="email" id="Email" placeholder="Email">
+                <input type="number" name="phone" id="Phone" placeholder="Phone">
+            </div><br><br>
+            <!--form-coutry-->
+            <div class="form-country">
+                <select name="country" id="form-country" placeholder="Seclect contry">
+                 <option value="" >Select country</option>   
+                <option value="Vietnam">Vietnam</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Philippine">Philippine</option>
+                <option value="Lao">Lao</option>
+                <option value="Campuchia">Campuchia</option>
+                </select><br><br>
+                <!--city-address-->
+                <div class="city-address">
+                    <input type="text"placeholder="City"><br><br>
+                    <input type="text" placeholder="Addres"><br><br>
+                </div>
+                <!--postion-->
+                <div class="position">
+                    <select name="position" id="Position">
+                        <option value="">Choose desired position</option>
+                     <option value="Operator">Operator</option>
+                     <option value="Manager">Manager</option>
+                     <option value="Developer">Developer</option>
+                     <option value="Tester">Tester</option>
+                     <option value="Designer">Designer</option>
+                    </select>
+                </div><br><br>
+                <!--Addtional-info-->
+                <div class="Addtional-info">
+                 <textarea name="" id="" cols="83%" rows="10" placeholder="Addtionanl info"></textarea>
+                </div><br><br>
+                <!--Add your CV-->
+                <div class="CV">
+                    <div class="input">
+                  <input type="text" placeholder="Add your Cv">
+                  </div>
+                  <div class="button">
+                  <button>Browse</button>
+                  <p>Only:pdf/doc Size: lessthan 1Mb</p>
+                  </div>
+                </div>
+                <p>Only:pdf/doc Size: lessthan 1Mb</p>
+                <!--reset-send-->
+                <div class="Rset-Send">
+                    <button value="Reset-data" onclick="fun()">Reset</button>
+                    <button>Send</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+<script>
+    //Country
+    var a= document.getElementById('form-country');
+    var trCountry= a.value;
+    //positon
+    var b= document.getElementById('Position');
+    var trUser= b.value;
+    //reset-button
+    function fun(){
+        document.getElementsByClassName('.form-group').reset();
+    }
+    //tên không đc để trống
+    var firstName = ('')
+    document.getElementsById('firstname')= function(){
+        
+    }
+    if(firsname()){
+
+    }
+</script>
+</html>
